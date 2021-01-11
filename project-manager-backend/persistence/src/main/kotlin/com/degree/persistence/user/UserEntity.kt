@@ -9,8 +9,10 @@ import java.util.*
 import javax.persistence.*
 import javax.validation.constraints.Email
 import javax.validation.constraints.NotEmpty
-import com.degree.persistence.professor.ProfessorEntity
+import com.degree.persistence.professor.TeacherEntity
 import com.degree.persistence.student.StudentEntity
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
+import com.fasterxml.jackson.annotation.JsonManagedReference
 
 @Entity(name = "user")
 class UserEntity(
@@ -31,11 +33,15 @@ class UserEntity(
         @field:Email
         var eMail: String? = null,
 
-        @OneToOne(fetch = FetchType.LAZY, mappedBy = "user")
+        @JsonIgnoreProperties("user")
+        @OneToOne(cascade = [(CascadeType.ALL)], fetch= FetchType.EAGER)
+        @JoinColumn(name = "fk_student")
         var student: StudentEntity? = null,
 
-        @OneToOne(fetch = FetchType.LAZY, mappedBy = "user")
-        var professor: ProfessorEntity? = null,
+        @JsonIgnoreProperties("user")
+        @OneToOne(cascade = [(CascadeType.ALL)], fetch= FetchType.EAGER)
+        @JoinColumn(name = "fk_teacher")
+        var teacher: TeacherEntity? = null,
 
         @field:JsonIgnore
         var jwtHash: String? = null

@@ -1,0 +1,31 @@
+.pm-choose-theme__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 47px;
+}
+
+.pm-choose-theme__header-title {
+  font-style: italic;
+  font-size: 19px;
+  color: blue;
+}
+
+.pm-choose-theme__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pm-choose-theme__text-field-container {
+  margin-bottom: 26px;
+  margin-top: 5px;
+}
+
+.pm-choose-theme__text-field {
+  width: 100%;
+}
+
+.pm-choose-theme__card {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 23%;
+}

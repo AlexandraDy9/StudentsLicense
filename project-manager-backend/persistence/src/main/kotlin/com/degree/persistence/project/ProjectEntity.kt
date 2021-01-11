@@ -3,8 +3,9 @@ package com.degree.persistence.project
 import javax.persistence.*
 import javax.validation.constraints.NotEmpty
 import com.degree.persistence.base.BaseEntity
-import com.degree.persistence.professor.ProfessorEntity
+import com.degree.persistence.professor.TeacherEntity
 import com.degree.persistence.student.StudentEntity
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 
 @Entity(name = "project")
 class ProjectEntity(
@@ -12,13 +13,13 @@ class ProjectEntity(
         var title: String? = null,
 
         @field:NotEmpty
+        @Column(length = 5000)
         var description: String? = null,
 
-        @OneToOne(fetch = FetchType.LAZY)
-        @JoinColumn(name = "fk_student")
-        var student: StudentEntity? = null,
+        var sessionYear: Int? = null,
 
+        @JsonIgnoreProperties("projects")
         @ManyToOne
-        @JoinColumn(name = "fk_professor")
-        var professor: ProfessorEntity? = null
+        @JoinColumn(name = "fk_teacher")
+        var teacher: TeacherEntity? = null
 ) : BaseEntity()

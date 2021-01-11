@@ -9,10 +9,9 @@ spring:
     password: ${DB_PASSWORD:root}
     testWhileIdle: true
     validationQuery: SELECT 1
-    driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         show_sql: false

@@ -2,7 +2,6 @@ package com.degree.persistence.license
 
 import com.degree.persistence.base.BaseEntity
 import javax.persistence.*
-import com.degree.persistence.student.StudentEntity
 import java.sql.Blob
 import javax.validation.constraints.NotEmpty
 
@@ -11,16 +10,18 @@ class LicenseEntity(
         @field:NotEmpty
         var title: String? = null,
 
+        @ElementCollection
+        var technologies: List<String>? = null,
+
         @field:NotEmpty
-        var technologies: String? = null,
+        var status: String? = null,
+
+        var note: Int? = null,
 
         @Lob
         var documentation: Blob? = null,
 
         @field:NotEmpty
-        var description: String? = null,
-
-        @OneToOne(fetch = FetchType.LAZY)
-        @JoinColumn(name = "fk_student")
-        var student: StudentEntity? = null
+        @Column(length = 5000)
+        var description: String? = null
 ) : BaseEntity()

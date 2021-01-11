@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "address": "merilor 19",
+    "name": "Residential 1",
+    "locationCoords": "500,6000",
+    "countBuildings": 10
+  },
+  {
+    "id": 1,
+    "address": "perilor 20",
+    "name": "Residential 2",
+    "locationCoords": "6000,3000",
+    "countBuildings": 10
+  },
+  {
+    "id": 2,
+    "address": "albastrelelor 38",
+    "name": "Residential 3",
+    "locationCoords": "400,600",
+    "countBuildings": 10
+  },
+  {
+    "id": 3,
+    "address": "plajei 30",
+    "name": "Residential 4",
+    "locationCoords": "3000,200",
+    "countBuildings": 10
+  },
+  {
+    "id": 4,
+    "address": "albastrelelor albastrele 50, Brasov",
+    "name": "Residential 5",
+    "locationCoords": "200,3000",
+    "countBuildings": 10
+  },
+  {
+    "id": 5,
+    "address": "",
+    "name": "Residential 6",
+    "locationCoords": "",
+    "countBuildings": 10
+  },
+  {
+    "id": 6,
+    "address": "",
+    "name": "Residential 7",
+    "locationCoords": "",
+    "countBuildings": 10
+  },
+  {
+    "id": 7,
+    "address": "",
+    "name": "Residential 8",
+    "locationCoords": "",
+    "countBuildings": 10
+  },
+  {
+    "id": 8,
+    "address": "",
+    "name": "Residential 9",
+    "locationCoords": "30,100",
+    "countBuildings": 10
+  },
+  {
+    "id": 9,
+    "address": "",
+    "name": "Residential 10",
+    "locationCoords": "",
+    "countBuildings": 10
+  }
+]

@@ -12,11 +12,10 @@ import org.springframework.security.config.http.SessionCreationPolicy
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.data.repository.query.SecurityEvaluationContextExtension
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository
 import org.springframework.security.web.session.HttpSessionEventPublisher
 import org.springframework.session.web.http.HeaderHttpSessionIdResolver
 import org.springframework.session.web.http.HttpSessionIdResolver
-
-
 
 @Configuration
 @EnableWebSecurity
@@ -26,15 +25,14 @@ class WebSecurityConfig(private val userDetailsService: CustomUserDetailsService
 
     override fun configure(http: HttpSecurity) {
         http
-                .httpBasic().and()
-                .authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/com/degree/webapp/api/user/register").permitAll()
-                .antMatchers(HttpMethod.GET, "/com/degree/webapp/api/user/principal").permitAll()
-                .antMatchers(HttpMethod.GET, "/configuration/ui", "/swagger-resources/**", "/configuration/auth", "/swagger-ui.html").permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .logout().logoutUrl("/com/degree/webapp/api/logout").permitAll().and()
+                .cors().disable()
+                .httpBasic().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .csrf().disable()
+                .authorizeRequests()
+                .and()
+                .logout()
+                    .logoutUrl("/api/logout").permitAll().and()
+
 
         http.sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)

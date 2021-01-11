@@ -1,0 +1,45 @@
+.pm-teacher-themes__wrapper {
+  background-color: white;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+
+.pm-teacher-themes__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 47px;
+  align-items: center;
+}
+
+.pm-teacher-themes__header-title {
+  font-size: 25px;
+}
+
+.pm-teacher-themes__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pm-teacher-themes__text-field-container {
+  margin-bottom: 26px;
+  margin-top: 5px;
+}
+
+.pm-teacher-themes__text-field {
+  width: 100%;
+}
+
+.pm-teacher-themes__card {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 23%;
+}
+
+.pm-teacher-themes__message-empty {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-style: oblique;
+}

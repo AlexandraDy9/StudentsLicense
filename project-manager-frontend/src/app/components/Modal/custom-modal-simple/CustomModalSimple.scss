@@ -1,0 +1,31 @@
+.pm-custom-modal__root {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 40%;
+}
+
+.pm-custom-modal__children {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-height: 90vh;
+  position: relative;
+}
+
+.pm-custom-modal__modal-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pm-custom-modal__modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pm-custom-modal__title {
+  font-weight: bold;
+  font-size: 20px;
+}

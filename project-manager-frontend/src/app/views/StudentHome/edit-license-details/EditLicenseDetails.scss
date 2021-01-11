@@ -1,0 +1,26 @@
+.pm-edit-license-details__text-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.pm-edit-license-details__selectors-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pm-edit-license-details__upload-button {
+  padding-top: 20px;
+}
+
+.pm-edit-license-details__technologies-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px 0px 0px;
+}
+
+.pm-edit-license-details__technologies-title {
+  font-size: 19px;
+  padding-right: 15px;
+}

@@ -1,0 +1,15 @@
+//action type constants
+export const LOAD_LITERALS = "LOAD_LITERALS";
+
+export const REGISTER = "REGISTER";
+export const LOGOUT = "LOGOUT";
+
+export const GET_STUDENT_DETAILS = "GET_STUDENT_DETAILS";
+export const EDIT_STUDENT_DETAILS = "EDIT_STUDENT_DETAILS";
+export const SET_CREATED_STUDENT = "SET_CREATED_STUDENT";
+
+export const GET_ALL_PROJECTS = "GET_ALL_PROJECTS";
+export const GET_ALL_TEACHERS = "GET_ALL_TEACHERS";
+
+export const GET_TEACHER_DETAILS = "GET_TEACHER_DETAILS";
+export const UPDATE_TEACHER = "UPDATE_TEACHER";
