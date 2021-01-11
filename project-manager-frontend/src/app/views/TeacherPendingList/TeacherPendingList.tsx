@@ -55,21 +55,6 @@ const useStyles = makeStyles({
   },
 });
 
-// const students = [
-//   {
-//     student: "Diana Alexandra Nica",
-//     title: "Recunoastere vizuala de dactileme",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor felis mauris, non fringilla turpis vestibulum et. Proin nec pellentesque mauris. Nulla vel pharetra magna. Nullam molestie nunc a elit luctus, in efficitur odio pellentesque. Quisque sollicitudin efficitur tincidunt. Quisque nunc justo, elementum ac leo id, mattis elementum dolor. ",
-//   },
-//   {
-//     student: "Cosmin Florin Popica",
-//     title: "Sisteme educationale inteligente",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor felis mauris, non fringilla turpis vestibulum et. Proin nec pellentesque mauris. Nulla vel pharetra magna. Nullam molestie nunc a elit luctus, in efficitur odio pellentesque. Quisque sollicitudin efficitur tincidunt. Quisque nunc justo, elementum ac leo id, mattis elementum dolor. ",
-//   },
-// ];
-
 export default function TeacherPendingList(props: TeacherPendingListProps) {
   const { teacher, changeStudentStatus } = props;
   const handler = useHandlers(props);

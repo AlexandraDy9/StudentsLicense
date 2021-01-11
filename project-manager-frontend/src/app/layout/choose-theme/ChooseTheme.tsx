@@ -24,38 +24,6 @@ export default function ChooseTheme(props: ChooseThemeProps) {
   const { projects } = props;
 
   const handler: HandlersProps = useHandlers(props);
-  // const themes = [
-  //   {
-  //     professor: "Sasu",
-  //     title: "Recunoastere vizuala de dactileme",
-  //     description:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor felis mauris, non fringilla turpis vestibulum et. Proin nec pellentesque mauris. Nulla vel pharetra magna. Nullam molestie nunc a elit luctus, in efficitur odio pellentesque. Quisque sollicitudin efficitur tincidunt. Quisque nunc justo, elementum ac leo id, mattis elementum dolor. ",
-  //   },
-  //   {
-  //     professor: "Dumitrescu",
-  //     title: "Sisteme educationale inteligente",
-  //     description:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor felis mauris, non fringilla turpis vestibulum et. Proin nec pellentesque mauris. Nulla vel pharetra magna. Nullam molestie nunc a elit luctus, in efficitur odio pellentesque. Quisque sollicitudin efficitur tincidunt. Quisque nunc justo, elementum ac leo id, mattis elementum dolor. ",
-  //   },
-  //   {
-  //     professor: "Dumitrescu",
-  //     title: "Sisteme educationale inteligente",
-  //     description:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor felis mauris, non fringilla turpis vestibulum et. Proin nec pellentesque mauris. Nulla vel pharetra magna. Nullam molestie nunc a elit luctus, in efficitur odio pellentesque. Quisque sollicitudin efficitur tincidunt. Quisque nunc justo, elementum ac leo id, mattis elementum dolor. ",
-  //   },
-  //   {
-  //     professor: "Dumitrescu",
-  //     title: "Sisteme educationale inteligente",
-  //     description:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor felis mauris, non fringilla turpis vestibulum et. Proin nec pellentesque mauris. Nulla vel pharetra magna. Nullam molestie nunc a elit luctus, in efficitur odio pellentesque. Quisque sollicitudin efficitur tincidunt. Quisque nunc justo, elementum ac leo id, mattis elementum dolor. ",
-  //   },
-  //   {
-  //     professor: "Dumitrescu",
-  //     title: "Sisteme educationale inteligente",
-  //     description:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor felis mauris, non fringilla turpis vestibulum et. Proin nec pellentesque mauris. Nulla vel pharetra magna. Nullam molestie nunc a elit luctus, in efficitur odio pellentesque. Quisque sollicitudin efficitur tincidunt. Quisque nunc justo, elementum ac leo id, mattis elementum dolor. ",
-  //   },
-  // ];
 
   return (
     <React.Fragment>
